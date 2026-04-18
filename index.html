@@ -1,6 +1,338 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello 👋</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soroor Eskandari | Data Engineer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    header {
+      padding: 80px 0 50px;
+      border-bottom: 2px solid #fff;
+    }
+
+    .hero-name {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .hero-role {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-summary {
+      max-width: 800px;
+      font-size: 1.05rem;
+      margin-bottom: 25px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 50px 0;
+      border-bottom: 1px solid #444;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      border-left: 6px solid #fff;
+      padding-left: 14px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .section-text {
+      max-width: 900px;
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .card {
+      border: 1px solid #fff;
+      padding: 22px;
+      background: #0a0a0a;
+    }
+
+    .job-meta {
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ddd;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 12px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 40px;
+    }
+
+    .skill-item strong {
+      display: inline-block;
+      min-width: 180px;
+      font-weight: 900;
+    }
+
+    .project-box {
+      border: 1px solid #fff;
+      padding: 22px;
+      margin-bottom: 22px;
+      background: #050505;
+    }
+
+    .project-box p {
+      margin-bottom: 12px;
+    }
+
+    .footer {
+      padding: 35px 0 60px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-name {
+        font-size: 2.2rem;
+      }
+
+      .grid,
+      .skills-list {
+        grid-template-columns: 1fr;
+      }
+
+      .skill-item strong {
+        min-width: auto;
+        display: block;
+        margin-bottom: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero-name"><strong>SOROOR ESKANDARI</strong></div>
+      <div class="hero-role"><strong>DATA ENGINEER</strong></div>
+      <p class="hero-summary">
+        I am a Data Engineer with hands-on experience in building ETL pipelines, designing data warehouse schemas,
+        orchestrating workflows, and delivering analytics solutions using Python, SQL, Snowflake, Azure, and Airflow.
+        My work focuses on transforming raw industrial and ERP data into reliable, scalable, and business-ready data products.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:soroor.eskandari.work@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/sorour-eskandari-224333a1" target="_blank">LinkedIn</a>
+        <a href="https://github.com/sorour-sn" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <section>
+      <h2><strong>ABOUT ME</strong></h2>
+      <p class="section-text">
+        I am currently working as a Data Engineer at Uniper, where I build and automate data pipelines for IIoT and ERP data.
+        My background combines practical experience in ETL development, SQL engineering, relational databases, cloud data warehousing,
+        and reporting. I am especially interested in scalable data platforms, workflow orchestration, data modeling, and modern analytics engineering.
+      </p>
+    </section>
+
+    <section>
+      <h2><strong>CORE SKILLS</strong></h2>
+      <div class="skills-list">
+        <div class="skill-item"><strong>Programming:</strong> Python, SQL</div>
+        <div class="skill-item"><strong>Data Engineering:</strong> ETL/ELT Pipelines, Apache Airflow, Pandas</div>
+        <div class="skill-item"><strong>Warehousing:</strong> Snowflake, Data Modeling, Kimball</div>
+        <div class="skill-item"><strong>Cloud:</strong> Microsoft Azure</div>
+        <div class="skill-item"><strong>Databases:</strong> RDBMS, Neo4j</div>
+        <div class="skill-item"><strong>Visualization:</strong> Power BI, HoloViz</div>
+        <div class="skill-item"><strong>DevOps:</strong> Git, GitHub Actions, Azure DevOps, Azure Pipelines, CI/CD</div>
+        <div class="skill-item"><strong>Data Processing:</strong> NumPy</div>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>EXPERIENCE</strong></h2>
+
+      <div class="card" style="margin-bottom: 22px;">
+        <h3><strong>DATA ENGINEER – WORKING STUDENT | UNIPER, DÜSSELDORF</strong></h3>
+        <div class="job-meta">Jul 2024 – Present</div>
+        <ul>
+          <li>Implemented ETL pipelines in Python using Pandas to ingest IIoT and ERP data from files and PI APIs.</li>
+          <li>Designed and modeled schemas in Snowflake using different warehouse modeling approaches, including Kimball principles.</li>
+          <li>Used Microsoft Azure services for data ingestion, storage, and orchestration.</li>
+          <li>Developed SQL views, interactive Power BI dashboards, and Python applications with HoloViz Panel for reporting and visualization.</li>
+          <li>Orchestrated pipelines and automated data quality checks using Apache Airflow.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-bottom: 22px;">
+        <h3><strong>SQL AND ERP DEVELOPER | DOTIN, TEHRAN</strong></h3>
+        <div class="job-meta">Aug 2022 – Jul 2023</div>
+        <ul>
+          <li>Implemented ETL processes using advanced SQL queries to process and transform large-scale structured ERP data for banking systems.</li>
+          <li>Designed modular T-SQL components including stored procedures, views, and functions to support business logic in supply chain and procurement workflows.</li>
+          <li>Optimized relational database performance and scalability through indexing strategies and query tuning on high-volume datasets.</li>
+          <li>Analyzed and modeled ERP data structures aligned with reporting and operational decision-making needs.</li>
+          <li>Developed C# backend services for data access, validation, and integration with enterprise ERP applications.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><strong>SQL DEVELOPER | FAVA, TEHRAN</strong></h3>
+        <div class="job-meta">Nov 2021 – Jul 2022</div>
+        <ul>
+          <li>Worked with relational databases and SQL to analyze and optimize query performance.</li>
+          <li>Applied indexing strategies, join optimization, and execution plan analysis to improve efficiency.</li>
+          <li>Built and maintained data models and database schemas for application and business requirements.</li>
+          <li>Developed stored procedures and database views to support data processing workflows and reporting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>PROJECT HIGHLIGHTS</strong></h2>
+
+      <div class="project-box">
+        <h3><strong>INDUSTRIAL DATA ETL PIPELINES</strong></h3>
+        <p>
+          Built Python-based ETL pipelines to ingest industrial IIoT and ERP data from APIs and files, transform it into analytical models,
+          and load it into Snowflake for downstream reporting and business use.
+        </p>
+        <p><strong>Tech:</strong> Python, Pandas, Snowflake, Azure, Airflow</p>
+      </div>
+
+      <div class="project-box">
+        <h3><strong>DATA WAREHOUSE MODELING</strong></h3>
+        <p>
+          Designed cloud warehouse schemas using practical data modeling approaches, including Kimball-style structures,
+          to support scalable analytics and reliable reporting.
+        </p>
+        <p><strong>Tech:</strong> Snowflake, SQL, Data Modeling</p>
+      </div>
+
+      <div class="project-box">
+        <h3><strong>SQL PERFORMANCE AND ERP DATA ENGINEERING</strong></h3>
+        <p>
+          Developed and optimized SQL-based ETL processes, stored procedures, and relational schemas for large-scale ERP and banking-related data workflows.
+        </p>
+        <p><strong>Tech:</strong> SQL, T-SQL, RDBMS, Indexing, Query Optimization</p>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>EDUCATION</strong></h2>
+      <div class="grid">
+        <div class="card">
+          <h3><strong>M.SC. COMPUTER SCIENCE</strong></h3>
+          <p>University of Siegen, Germany</p>
+          <p>Oct 2023 – Nov 2026</p>
+          <p>Current Grade: 2</p>
+        </div>
+        <div class="card">
+          <h3><strong>B.SC. COMPUTER SCIENCE</strong></h3>
+          <p>University of Qazvin, Iran</p>
+          <p>2018 – 2022</p>
+          <p>Grade: 2.1</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>LANGUAGES</strong></h2>
+      <div class="grid">
+        <div class="card"><strong>English:</strong> C1</div>
+        <div class="card"><strong>German:</strong> B2</div>
+        <div class="card"><strong>Persian:</strong> Native</div>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>CERTIFICATES</strong></h2>
+      <div class="grid">
+        <div class="card">
+          <h3><strong>CYPHER FUNDAMENTALS</strong></h3>
+          <p>May 2024</p>
+        </div>
+        <div class="card">
+          <h3><strong>NEO4J FUNDAMENTALS</strong></h3>
+          <p>April 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>LET'S CONNECT</strong></h2>
+      <p class="section-text">
+        I am open to data engineering opportunities, working student roles, and full-time positions focused on
+        data pipelines, cloud data platforms, analytics engineering, and warehouse development.
+      </p>
+      <div class="contact-links" style="margin-top: 20px;">
+        <a href="mailto:soroor.eskandari.work@gmail.com">soroor.eskandari.work@gmail.com</a>
+        <a href="https://linkedin.com/in/sorour-eskandari-224333a1" target="_blank">LinkedIn Profile</a>
+        <a href="https://github.com/sorour-sn" target="_blank">GitHub Profile</a>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p><strong>Soroor Eskandari</strong> — Data Engineer</p>
+    </div>
+  </div>
+</body>
 </html>
