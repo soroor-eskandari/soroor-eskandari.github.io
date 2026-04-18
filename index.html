@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soroor Eskandari | Data Engineer</title>
-
   <style>
     * {
       box-sizing: border-box;
@@ -41,21 +40,6 @@
       border-bottom: 2px solid #fff;
     }
 
-    .hero {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .profile-pic {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #fff;
-    }
-
     .hero-name {
       font-size: 3rem;
       font-weight: 900;
@@ -74,8 +58,21 @@
       font-size: 1.05rem;
       margin-bottom: 25px;
     }
-
-    .contact-links {
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+        .contact-links {
       display: flex;
       flex-wrap: wrap;
       gap: 18px;
@@ -146,6 +143,17 @@
       font-weight: 900;
     }
 
+    .project-box {
+      border: 1px solid #fff;
+      padding: 22px;
+      margin-bottom: 22px;
+      background: #050505;
+    }
+
+    .project-box p {
+      margin-bottom: 12px;
+    }
+
     .footer {
       padding: 35px 0 60px;
       text-align: center;
@@ -154,11 +162,6 @@
     }
 
     @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
       .hero-name {
         font-size: 2.2rem;
       }
@@ -176,24 +179,19 @@
     }
   </style>
 </head>
-
 <body>
   <div class="container">
-
     <header>
       <div class="hero">
-        <img src="soroor.jpg" class="profile-pic">
-        
+        <img src="soroor.jpg" alt="Soroor Eskandari" class="profile-pic">
         <div>
           <div class="hero-name"><strong>SOROOR ESKANDARI</strong></div>
           <div class="hero-role"><strong>DATA ENGINEER</strong></div>
-
           <p class="hero-summary">
             I am a Data Engineer with hands-on experience in building ETL/ELT pipelines, designing data warehouse schemas,
             orchestrating workflows, and delivering analytics solutions using Python, SQL, Snowflake, Azure, and Airflow.
             My work focuses on transforming raw industrial IIOT and ERP data into reliable, scalable, and business-ready data products.
           </p>
-
           <div class="contact-links">
             <a href="mailto:soroor.eskandari.work@gmail.com">Email</a>
             <a href="https://linkedin.com/in/sorour-eskandari-224333a1" target="_blank">LinkedIn</a>
@@ -203,8 +201,6 @@
       </div>
     </header>
 
-    <!-- KEEP REST SAME -->
-
     <section>
       <h2><strong>EXPERIENCE</strong></h2>
 
@@ -212,20 +208,109 @@
         <h3><strong>Data Engineer | Working Student | Uniper, Düsseldorf </strong></h3>
         <div class="job-meta">Jul 2024 – Present</div>
         <ul>
-          <li>Built Python-based (Pandas) ETL/ELT pipelines to integrate IIoT and ERP data from heterogeneous sources, enabling unified analytics and centralized data warehousing.</li>
-          <li>Designed and implemented database schemas following medallion architecture principles in Snowflake, improving data quality, traceability, and query performance.</li>
+          <li>Built Python-based (Pandas) ETL/ELT pipelines to integrate IIoT and ERP data from heterogeneous sources, enabling unified analytics source and centralized data warehousing.</li>
+          <li>Designed and implemented databse schemas following medallion architecture principles in Snowflake, improving data quality, traceability, and query performance.</li>
           <li>Used Microsoft Azure services for ingestion, storage, and orchestration, establishing a scalable and reliable cloud data platform to support growing data volumes.</li>
           <li>Translated business KPIs into dimensional data models (fact and dimension tables) and SQL views, structuring raw data into an analytics-ready format for consistent and efficient reporting.</li>
           <li>Orchestrated workflows and implemented automated data quality checks with Apache Airflow, ensuring pipeline reliability and early detection of data inconsistencies.</li>
         </ul>
       </div>
 
+      <div class="card" style="margin-bottom: 22px;">
+        <h3><strong>SQL and ERP Backend Developer | Full-time | Dotin, Tehran</strong></h3>
+        <div class="job-meta">Aug 2022 – Jul 2023</div>
+        <ul>
+          <li>Created ETL processes using SQL to transform large-scale ERP data for banking systems, preparing data for reliable downstream use.</li>
+          <li>Built modular T-SQL components (stored procedures, views, and functions) to implement business logic for supply chain and procurement workflows.</li>
+          <li>Improved database performance and scalability by applying indexing strategies and optimizing queries on high-volume datasets.</li>
+          <li>Studied and structured ERP data models to support reporting needs and operational decision-making.</li>
+          <li>Developed C# backend services for data access, validation, and integration with enterprise ERP systems.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><strong>SQL Developer | Full-time | Fava, Tehran</strong></h3>
+        <div class="job-meta">Nov 2021 – Jul 2022</div>
+        <ul>
+          <li>Used SQL and relational databases to analyze data and improve query performance.</li>
+          <li>Applied indexing, join optimization, and execution plan analysis to reduce query execution time and increase efficiency.</li>
+          <li>Designed and maintained data models and database schemas to support application and business requirements.</li>
+          <li>Created stored procedures and database views to enable efficient data processing and reporting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>CORE SKILLS</strong></h2>
+      <div class="skills-list">
+        <div class="skill-item"><strong>Programming:</strong> Python, SQL</div>
+        <div class="skill-item"><strong>Data Engineering:</strong> ETL/ELT Pipelines, Apache Airflow, Pandas</div>
+        <div class="skill-item"><strong>Warehousing:</strong> Snowflake, Data Modeling, Medallion, Kimball</div>
+        <div class="skill-item"><strong>Cloud:</strong> Microsoft Azure</div>
+        <div class="skill-item"><strong>Databases:</strong> RDBMS, Neo4j</div>
+        <div class="skill-item"><strong>Visualization:</strong> Power BI, HoloViz</div>
+        <div class="skill-item"><strong>DevOps:</strong> Git, GitHub Actions, Azure DevOps, Azure Pipelines, CI/CD</div>
+        <div class="skill-item"><strong>Data Processing:</strong> NumPy</div>
+      </div>
+    </section>
+    
+    <section>
+      <h2><strong>EDUCATION</strong></h2>
+      <div class="grid">
+        <div class="card">
+          <h3><strong>M.SC. COMPUTER SCIENCE</strong></h3>
+          <p>University of Siegen, Germany</p>
+          <p>Oct 2023 – Nov 2026</p>
+          <p>Current Grade: 2</p>
+        </div>
+        <div class="card">
+          <h3><strong>B.SC. COMPUTER SCIENCE</strong></h3>
+          <p>University of Qazvin, Iran</p>
+          <p>2018 – 2022</p>
+          <p>Grade: 2.1</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>LANGUAGES</strong></h2>
+      <div class="grid">
+        <div class="card"><strong>English:</strong> C1</div>
+        <div class="card"><strong>German:</strong> B2</div>
+        <div class="card"><strong>Persian:</strong> Native</div>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>CERTIFICATES</strong></h2>
+      <div class="grid">
+        <div class="card">
+          <h3><strong>CYPHER FUNDAMENTALS</strong></h3>
+          <p>May 2024</p>
+        </div>
+        <div class="card">
+          <h3><strong>NEO4J FUNDAMENTALS</strong></h3>
+          <p>April 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><strong>LET'S CONNECT</strong></h2>
+      <p class="section-text">
+        I am open to data engineering opportunities as full-time positions focused on
+        data pipelines, data modelling, analytics engineering, and warehouse development.
+      </p>
+      <div class="contact-links" style="margin-top: 20px;">
+        <a href="mailto:soroor.eskandari.work@gmail.com">soroor.eskandari.work@gmail.com</a>
+        <a href="https://linkedin.com/in/sorour-eskandari-224333a1" target="_blank">LinkedIn Profile</a>
+        <a href="https://github.com/sorour-sn" target="_blank">GitHub Profile</a>
+      </div>
     </section>
 
     <div class="footer">
       <p><strong>Soroor Eskandari</strong> — Data Engineer</p>
     </div>
-
   </div>
 </body>
 </html>
