@@ -40,6 +40,21 @@
       border-bottom: 2px solid #fff;
     }
 
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+
     .hero-name {
       font-size: 3rem;
       font-weight: 900;
@@ -58,21 +73,8 @@
       font-size: 1.05rem;
       margin-bottom: 25px;
     }
-    .hero {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    
-    .profile-pic {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #fff;
-    }
-        .contact-links {
+
+    .contact-links {
       display: flex;
       flex-wrap: wrap;
       gap: 18px;
@@ -139,19 +141,8 @@
 
     .skill-item strong {
       display: inline-block;
-      min-width: 180px;
+      min-width: 210px;
       font-weight: 900;
-    }
-
-    .project-box {
-      border: 1px solid #fff;
-      padding: 22px;
-      margin-bottom: 22px;
-      background: #050505;
-    }
-
-    .project-box p {
-      margin-bottom: 12px;
     }
 
     .footer {
@@ -179,6 +170,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -188,14 +180,15 @@
           <div class="hero-name"><strong>SOROOR ESKANDARI</strong></div>
           <div class="hero-role"><strong>DATA ENGINEER</strong></div>
           <p class="hero-summary">
-            I am a Data Engineer with hands-on experience in building ETL/ELT pipelines, designing data warehouse schemas,
-            orchestrating workflows, and delivering analytics solutions using Python, SQL, Snowflake, Azure, and Airflow.
-            My work focuses on transforming raw industrial IIOT and ERP data into reliable, scalable, and business-ready data products.
+            I am a Data Engineer with hands-on experience in ETL/ELT pipeline development, data warehousing,
+            dimensional data modeling, workflow orchestration, and analytics-ready data delivery. My work focuses on
+            integrating industrial IIoT, ERP, and enterprise data sources using Python, SQL, Snowflake, Azure, and
+            Apache Airflow to build reliable, scalable, and business-ready data solutions.
           </p>
           <div class="contact-links">
             <a href="mailto:soroor.eskandari.work@gmail.com">Email</a>
             <a href="https://linkedin.com/in/sorour-eskandari-224333a1" target="_blank">LinkedIn</a>
-            <a href="https://github.com/sorour-sn" target="_blank">GitHub</a>
+            <a href="https://github.com/soroor-eskandari.github.io" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
@@ -205,37 +198,36 @@
       <h2><strong>EXPERIENCE</strong></h2>
 
       <div class="card" style="margin-bottom: 22px;">
-        <h3><strong>Data Engineer | Working Student | Uniper, Düsseldorf </strong></h3>
+        <h3><strong>Data Engineer | Working Student | Uniper, Düsseldorf</strong></h3>
         <div class="job-meta">Jul 2024 – Present</div>
         <ul>
-          <li>Built Python-based (Pandas) ETL/ELT pipelines to integrate IIoT and ERP data from heterogeneous sources, enabling unified analytics source and centralized data warehousing.</li>
-          <li>Designed and implemented databse schemas following Inmon architecture principles in Snowflake, improving data quality, traceability, and query performance.</li>
-          <li>Used Microsoft Azure services for ingestion, storage, and orchestration, establishing a scalable and reliable cloud data platform to support growing data volumes.</li>
-          <li>Translated business KPIs into dimensional data models (Star schema) and SQL views, structuring raw data into an analytics-ready format for consistent and efficient reporting.</li>
-          <li>Orchestrated workflows and implemented automated data quality checks with Apache Airflow, ensuring pipeline reliability and early detection of data inconsistencies.</li>
+          <li>Developed ETL/ELT pipelines to integrate IIoT and ERP data from multiple sources, following Medallion Architecture to support scalable and maintainable data processing.</li>
+          <li>Designed and implemented dimensional data models in Snowflake to support analytical workloads, reporting, and business intelligence.</li>
+          <li>Worked closely with business stakeholders to translate KPIs and reporting requirements into business-ready data models and curated analytical datasets for decision-making.</li>
+          <li>Orchestrated and monitored data pipelines with Apache Airflow and implemented automated data quality checks to ensure reliable data delivery and early detection of issues.</li>
+          <li>Worked with Microsoft Azure services to develop and maintain cloud-based data workflows.</li>
         </ul>
       </div>
 
       <div class="card" style="margin-bottom: 22px;">
-        <h3><strong>SQL and ERP Backend Developer | Full-time | Dotin, Tehran</strong></h3>
+        <h3><strong>SQL and ERP Developer | Full-time | Dotin, Tehran</strong></h3>
         <div class="job-meta">Aug 2022 – Jul 2023</div>
         <ul>
-          <li>Created ETL processes using SQL to transform large-scale ERP data for banking systems, preparing data for reliable downstream use.</li>
-          <li>Built modular T-SQL components (stored procedures, views, and functions) to implement business logic for supply chain and procurement workflows.</li>
-          <li>Improved database performance and scalability by applying indexing strategies and optimizing queries on high-volume datasets.</li>
-          <li>Studied and structured ERP data models to support reporting needs and operational decision-making.</li>
-          <li>Developed C# backend services for data access, validation, and integration with enterprise ERP systems.</li>
+          <li>Designed and implemented relational database schemas for enterprise ERP systems, supporting banking operations and business KPI monitoring.</li>
+          <li>Improved database performance by optimizing complex SQL queries through indexing strategies and execution plan analysis on high-volume transactional datasets.</li>
+          <li>Designed and executed SQL-based ETL processes to migrate legacy ERP data from Excel files and heterogeneous database schemas into newly designed relational databases.</li>
+          <li>Developed Python backend services to integrate application logic with SQL Server databases and support ERP system functionality.</li>
+          <li>Collaborated closely with banking stakeholders to gather business requirements, analyze operational needs, and translate them into technical solutions for the ERP system.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3><strong>SQL Developer | Full-time | Fava, Tehran</strong></h3>
+        <h3><strong>SQL and Backend Developer | Full-time | FAVA, Tehran</strong></h3>
         <div class="job-meta">Nov 2021 – Jul 2022</div>
         <ul>
-          <li>Used SQL and relational databases to analyze data and improve query performance.</li>
-          <li>Applied indexing, join optimization, and execution plan analysis to reduce query execution time and increase efficiency.</li>
-          <li>Designed and maintained data models and database schemas to support application and business requirements.</li>
-          <li>Created stored procedures and database views to enable efficient data processing and reporting.</li>
+          <li>Designed and implemented the relational database schema for an internal banking monitoring dashboard, providing a structured and maintainable foundation for operational data management.</li>
+          <li>Engineered SQL database objects, including stored procedures and views, to optimize dashboard reporting performance and enable efficient report generation.</li>
+          <li>Developed Python-based backend functionalities for the internal monitoring dashboard by integrating application logic with the relational database to support core system operations.</li>
         </ul>
       </div>
     </section>
@@ -244,16 +236,16 @@
       <h2><strong>CORE SKILLS</strong></h2>
       <div class="skills-list">
         <div class="skill-item"><strong>Programming:</strong> Python, SQL</div>
-        <div class="skill-item"><strong>Data Engineering:</strong> ETL/ELT Pipelines, Apache Airflow, Pandas</div>
-        <div class="skill-item"><strong>Warehousing:</strong> Snowflake, Data Modeling, Medallion, Kimball</div>
-        <div class="skill-item"><strong>Cloud:</strong> Microsoft Azure</div>
-        <div class="skill-item"><strong>Databases:</strong> RDBMS, Neo4j</div>
-        <div class="skill-item"><strong>Visualization:</strong> Power BI, HoloViz</div>
-        <div class="skill-item"><strong>DevOps:</strong> Git, GitHub Actions, Azure DevOps, Azure Pipelines, CI/CD</div>
+        <div class="skill-item"><strong>Data Engineering:</strong> ETL/ELT Pipelines, Pandas, Apache Airflow</div>
+        <div class="skill-item"><strong>Data Warehousing:</strong> Snowflake, Data Modeling</div>
+        <div class="skill-item"><strong>Databases:</strong> SQL, Neo4j</div>
+        <div class="skill-item"><strong>Cloud Platforms:</strong> Microsoft Azure</div>
         <div class="skill-item"><strong>Data Processing:</strong> NumPy</div>
+        <div class="skill-item"><strong>Visualization:</strong> Power BI, HoloViz</div>
+        <div class="skill-item"><strong>DevOps & CI/CD:</strong> Git, Azure DevOps, Azure Pipelines, CI/CD</div>
       </div>
     </section>
-    
+
     <section>
       <h2><strong>EDUCATION</strong></h2>
       <div class="grid">
@@ -285,12 +277,24 @@
       <h2><strong>CERTIFICATES</strong></h2>
       <div class="grid">
         <div class="card">
+          <h3><strong>ADVANCED DATA ENGINEERING WITH SNOWFLAKE</strong></h3>
+          <p>May 2026</p>
+          <p><a href="https://www.coursera.org/account/accomplishments/verify/C6ZDYJZ7205V" target="_blank">Online Certificate</a></p>
+        </div>
+        <div class="card">
+          <h3><strong>DATA MODELS AND PIPELINES</strong></h3>
+          <p>May 2026</p>
+          <p><a href="https://www.coursera.org/account/accomplishments/verify/GUWX7991F71N" target="_blank">Online Certificate</a></p>
+        </div>
+        <div class="card">
           <h3><strong>CYPHER FUNDAMENTALS</strong></h3>
           <p>May 2024</p>
+          <p><a href="https://graphacademy.neo4j.com/c/96ec4331-95ff-4f0b-a2f8-cc89f8b72630/" target="_blank">Online Certificate</a></p>
         </div>
         <div class="card">
           <h3><strong>NEO4J FUNDAMENTALS</strong></h3>
           <p>April 2024</p>
+          <p><a href="https://graphacademy.neo4j.com/c/0ee16e80-144b-40f5-bf07-60ee1edbb450/" target="_blank">Online Certificate</a></p>
         </div>
       </div>
     </section>
@@ -298,16 +302,15 @@
     <section>
       <h2><strong>LET'S CONNECT</strong></h2>
       <p class="section-text">
-        I am open to data engineering opportunities as full-time positions focused on
-        data pipelines, data modelling, analytics engineering, and warehouse development.
+        I am open to full-time Data Engineer roles focused on ETL/ELT pipelines, data warehousing,
+        data modeling, analytics engineering, and cloud-based data workflows.
       </p>
       <div class="contact-links" style="margin-top: 20px;">
         <a href="mailto:soroor.eskandari.work@gmail.com">soroor.eskandari.work@gmail.com</a>
         <a href="https://linkedin.com/in/sorour-eskandari-224333a1" target="_blank">LinkedIn Profile</a>
-        <a href="https://github.com/sorour-sn" target="_blank">GitHub Profile</a>
+        <a href="https://github.com/soroor-eskandari.github.io" target="_blank">GitHub Profile</a>
       </div>
     </section>
-    
 
     <div class="footer">
       <p><strong>Soroor Eskandari</strong> — Data Engineer</p>
